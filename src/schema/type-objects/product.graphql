@@ -1,0 +1,27 @@
+type Product {
+    id: ID!
+    name: String!
+    slug: String!
+    img: String!
+    clip: Clip
+    rating: Rating
+    stock: Int
+    screenshoot: [String]
+}
+
+type Clip {
+    clips: ClipQuality
+    video: String
+    preview: String
+}
+
+type ClipQuality {
+    low: String!
+    medium: String!
+    full: String!
+}
+
+type Rating {
+    value: Float!
+    count: Int!
+}

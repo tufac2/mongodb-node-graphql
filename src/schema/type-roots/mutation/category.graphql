@@ -1,0 +1,5 @@
+type Mutation {
+    addCategory(category: String!): ResultCategory,
+    updateCategory(id: ID! category: String!): ResultCategory,
+    deleteCategory(id: ID!): ResultCategory
+}

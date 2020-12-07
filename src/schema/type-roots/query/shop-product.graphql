@@ -1,0 +1,13 @@
+type Query {
+    shopProducts(page: Int = 1, itemsPage: Int = 20): ResultShopProduct
+    shopProductsPlatforms(page: Int = 1, itemsPage: Int = 20, platform: [ID!], random: Boolean = false): ResultShopProduct
+    shopProductsOffersLast(
+        page: Int = 1,
+        itemsPage: Int = 20,
+        "Threshold price to consider as sale product"
+        topPrice: Float = -1,
+        "Stock to control when alert of low stock"
+        lastUnits: Int = -1,
+        random: Boolean = true): ResultShopProduct
+
+}

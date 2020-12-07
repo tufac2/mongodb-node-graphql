@@ -1,0 +1,4 @@
+type Query {
+    categories (page: Int = 1, itemsPage: Int = 20): ResultCategory
+    category(id: ID!): ResultCategory
+}
